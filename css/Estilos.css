@@ -1,0 +1,402 @@
+/*menu*/
+* {
+    margin:0px;
+    padding:0px;
+}
+
+div.header{    
+    width: 100%;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav.Titulo{
+    opacity: 0.8;
+    width: 100%;
+    float: left;
+    left: 0;
+    right: 0;
+    top: 0%;
+    position: fixed;
+    background: #000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px;
+    padding-left: 58px;
+    padding-right: 550px;
+    display:block;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    
+}
+
+div.logo{
+    padding-left:10px;
+    top: 0%;
+    position: fixed;
+    z-index: 2;
+}
+
+nav{
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    top: 0%;
+    float: right;
+}
+
+.menu > li{
+    float: left;
+}
+
+ul,ol{
+    list-style:none;
+}
+
+.menu li a{
+    color:#fff;
+    text-decoration:none;
+    padding:10px 15px;
+    display:block;
+}
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.menu li a:hover{
+    background-color:#434343;
+    color: mediumaquamarine;
+}
+
+.menu li:hover > ul {
+    display:block;
+    opacity: 0.8;
+    background-color: #000;
+   }
+
+.menu-btn{
+    display: none;
+}
+
+@media screen and (max-width: 1070px){
+
+    .menu-btn{
+        display: block;
+        margin-right: 10px;
+        margin-top: 8px;
+        z-index: 10;
+    }
+    .menu-btn:hover{
+        opacity: 0.8;
+    }
+
+   .fa-bars{
+        color:#fff;
+        font-size:25px;
+    }
+
+    .menu > li{
+        float: none;
+    }
+
+    .menu{
+        margin-top: 42px;
+        background: black;
+        opacity: 0.8;
+        height: 1000px;
+        transition: all 0.3s;
+    }
+
+    .ocultar-menu{
+        margin-right: -150px;
+    }
+
+    .menu li a:hover{
+        border-left: 2px solid mediumaquamarine;
+        color: mediumaquamarine;
+    }
+
+    .menu li:hover > ul {
+        opacity: 1;
+       }
+
+
+
+}
+
+@media screen and (max-width: 750px){
+
+    .p4{
+        max-width: 100%;
+        font-size:0.5em;
+    }
+
+    .contenido{
+        max-width: 100%;
+    }
+
+    .formulario{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .g-recaptcha{
+        display: inline-block;
+        transform: scale(0.9);
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .g-recaptcha{
+        display: inline-block;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .g-recaptcha{
+        margin-left: -72px;
+        transform: scale(0.6);
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*contenido*/
+
+body{
+    background: url("../img/Background.jpg") top center;
+    background-size: cover;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size:14px;
+	font-weight:400;
+	line-height:1.6em;
+    color:#dad6d6;
+    text-shadow: 0.7px 0.8px 3px rgb(14, 12, 24);
+}
+
+.Dark{
+    background: rgb(24, 24, 24);
+}
+
+.contenido{
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.Logotipo{
+    height: auto;
+    max-width: 100%;
+}
+
+.form_in{
+    background-color: #00dd55;
+
+
+}
+
+.subtit{
+    font-size: 1.6em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+
+}
+
+.in_btns_div{
+    /*background-color:black ;*/
+    background: rgba(41, 54, 59, 0.76);
+    border-radius: 4px;
+    /*opacity: 0.8;*/
+    margin-top: 5em;
+    /*padding: 1em;*/
+    padding: 5em 3em 5em 3em;
+    margin-right: 50%;
+    margin-left: 10%;
+}
+
+.in_btn, .home_btn{
+    text-decoration:none;
+    cursor: pointer;
+   
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    /*width: 5em;*/
+    /*text-transform: uppercase;*/
+    font-size: 20px;
+    color: floralwhite;
+    background: rgba(10, 153, 209, 0.76);
+    /*border: none;*/
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    display:block;
+
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+.in_btn:hover, .home_btn:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(4, 86, 238);
+    /*box-shadow: 0px 0px 5px 3px rgb(108, 247, 235);*/
+}
+
+
+.login-div{
+    background: rgba(41, 54, 59, 0.76);
+    border-radius: 4px;
+    /*opacity: 0.8;*/
+    margin-top: 5em;
+    /*padding: 1em;*/
+    padding: 5em 3em 5em 3em;
+    /*margin-right: 50%;
+    margin-left: 10%;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.form-objts{
+    margin-top: 0.5em;
+}
+
+.login-form input[type="text"],input[type="password"]{
+    height: 3.5em;
+    border: none;
+    /*font-size: 2em;
+    padding-bottom: 0em;*/
+
+}
+
+.signup-div, .home_btns_div{
+    background: rgba(41, 54, 59, 0.76);
+    border-radius: 4px;
+    /*opacity: 0.8;*/
+    margin-top: 5em;
+    /*padding: 1em;*/
+    padding: 5em 3em 5em 3em;
+    /*margin-right: 50%;
+    margin-left: 10%;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.signup-form input[type="text"],input[type="date"],input[type="email"],input[type="password"]{
+    height: 3.5em;
+    border: none;
+    /*font-size: 2em;
+    padding-bottom: 0em;*/
+
+}
+
+
+
+
+
+
+/*-------------------------------------------*/
+/*contacto*/
+.formulario{
+    width: 80%;
+    margin: auto;
+    background: rgba(41, 54, 59, 0.76);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+input:focus,textarea:focus{
+    border: 1px solid #00dd55;
+}
+
+input[type="submit"]:hover{
+    background: rgb(54, 114, 224);
+}
+
+textarea{
+    resize: vertical;
+    max-height: 150px;
+}
+
+.g-recaptcha{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+#enviar-btn{
+    width: 60%;
+}
+
+.p3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    margin: auto;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 3px;
+    font-family:'Open Sans', Arial, sans-serif;
+	font-size:25px;
+	font-weight:400;
+	line-height:1.6em;
+    color: whitesmoke;
+    font-style: normal;
+    text-align: center;
+}
+
+.p4{
+    font-size:20px;
+}
+/*-------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*footer*/
+
+footer{
+    opacity: 0.8;
+    width:100%;
+    background-color: black;
+    font-family:'Open Sans', Arial, sans-serif;
+	font-size:14px;
+	font-weight:400;
+	line-height:1.6em;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 0.7px 0.8px 3px white;
+    padding: 5px;
+    position: fixed;
+    /*position: absolute;*/
+    bottom: 0px;
+}
